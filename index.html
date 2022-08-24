@@ -46,13 +46,13 @@
 			align-items:baseline;
 			justify-content: center;
 			font-size: 5.6vw;
-			font-family:'Roboto', 'OPPOSans' ,'Droid Sans', '-apple-system', 'HelveticaNeue';
+			font-family:'OPPOSans' ,'Droid Sans', '-apple-system', 'HelveticaNeue';
 		}
 
 		#sRemain {
 			font-weight:550;
 			/*字体粗细100~900，,400为normal*/
-			font-family:'Roboto', 'OPPOSans' ,'Droid Sans', '-apple-system', 'HelveticaNeue';
+			font-family:'OPPOSans' ,'Droid Sans', '-apple-system', 'HelveticaNeue';
 			overflow:hidden;
 			line-height: 5.4vw;
 		}
@@ -60,7 +60,7 @@
 		.qcodeBox {
 			position: absolute;
 			top: 71.8vw;
-			left: 23.5vw;
+			left: 23.3vw;
 			display: flex;
 			justify-content: center;
 		}
@@ -264,8 +264,8 @@
 	}
 	//生成二维码
 	var config = {
-		width: $(document.body).width() / 100.0 * 53.3,
-		height: $(document.body).width() / 100.0 * 53.3,
+		width: $(document.body).width() / 100.0 * 53.5,
+		height: $(document.body).width() / 100.0 * 53.5,
 		text: codeContent, //text就表示二维码中存储的数据  必须传递
 		correctLevel: 1,//取值为0|1|2|3 表示二维码的纠错级别0:L/1:M/2:Q/3:H ,默认0  可选参数
 		background: "#FFFFFF",	//默认白色, 表示二维码的后景颜色 可选参数
@@ -278,8 +278,8 @@
 		sRemain = '60'; //重置倒计时秒数
 		codeContent = randomNumber(160);
 		config = {	//重新设二维码的数据
-			width: $(document.body).width() / 100.0 * 53.3,	//二维码的宽、高
-			height: $(document.body).width() / 100.0 * 53.3,
+			width: $(document.body).width() / 100.0 * 53.5,	//二维码的宽、高
+			height: $(document.body).width() / 100.0 * 53.5,
 			text: codeContent,	//text就表示二维码中存储的数据  必须传递
 			correctLevel: 1,	//取值为0|1|2|3 表示二维码的纠错级别0:L/1:M/2:Q/3:H ,默认0  可选参数
 			background: "#FFFFFF",	//默认白色, 表示二维码的后景颜色 可选参数
