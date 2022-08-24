@@ -34,30 +34,31 @@
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: column;
+			margin-bottom: 2vw;
 		}
 
 		/* 时间box */
 		.timeBox {
 			position: absolute;
 			top: 60vw;
-			left: 17.3vw;
+			left: 17.2vw;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 5.5vw;
+			font-size: 5.6vw;
 			font-family:'Droid Sans', '-apple-system', 'HelveticaNeue';
 		}
 
 		#sRemain {
-			font-weight:bold;
+			font-weight:900;
 			/*字体粗细100~900，,400为normal*/
 			font-family:'Droid Sans', '-apple-system', 'HelveticaNeue';
 		}
 
 		.qcodeBox {
 			position: absolute;
-			top: 70vw;
-			left: 23vw;
+			top: 71.5vw;
+			left: 23.5vw;
 			display: flex;
 			justify-content: center;
 		}
@@ -143,7 +144,7 @@
 	//秒
 	let second = new Date().getSeconds()
 	if (second < 10) second = '0' + second
-	$('#second').html(second + '&nbsp')
+	$('#second').html(second + '&nbsp'+ '&nbsp')
 	//倒计时
 	let sRemain = '59';
 	$('#sRemain').html('(' + sRemain + ')')
@@ -159,7 +160,7 @@
 		//秒
 		second = new Date().getSeconds()
 		if (second < 10) second = '0' + second
-		$('#second').html(second + '&nbsp')
+		$('#second').html(second + '&nbsp'+ '&nbsp')
 		$('#time').html(time)
 		//倒计时
 		sRemain = sRemain - 1;
